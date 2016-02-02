@@ -28,25 +28,26 @@
 		var ballX = canvas.width/2;
     	var ballY = canvas.height/2;
 		
-		var ballDx = 2; 
-		var ballDy = -2; 
-		
-		context.beginPath();
-		context.rect(20, 40, 40, 120);
-		context.fillStyle = "#23D500";
-		context.fill();
-		context.strokeStyle = "white";
-		context.stroke();
-		context.closePath();
+		var ballDx = -1; 
+		var ballDy = 1; 
 		
 		function draw() {
+			context.clearRect(0, 0, canvas.width, canvas.height);
+			
+			context.beginPath();
+			context.rect(20, 40, 40, 120);
+			context.fillStyle = "#23D500";
+			context.fill();
+			context.strokeStyle = "white";
+			context.stroke();
+			context.closePath();
 			
     		context.beginPath();
 			context.arc(ballX, ballY, 9, 0, Math.PI*2);
 			context.fillStyle = "white";
 			context.fill();
-			context.strokeStyle = "#23D500";
-			context.stroke();
+			//context.strokeStyle = "#23D500";
+			//context.stroke();
 			context.closePath();
 			
 			ballX += ballDx 
