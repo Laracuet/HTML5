@@ -26,10 +26,10 @@
 		var context = canvas.getContext("2d");
 		
 		context.beginPath();
-		context.rect(20, 40, 50, 50);
-		//context.fillStyle = "#FF0000";
-		//context.fill();
-		context.strokeStyle = "rgba(0, 0, 255, 0.5)";
+		context.rect(20, 40, 40, 120);
+		context.fillStyle = "#23D500";
+		context.fill();
+		context.strokeStyle = "white";
 		context.stroke();
 		context.closePath();
 		
@@ -38,9 +38,11 @@
     		var y = canvas.height/2;
 			
     		context.beginPath();
-			context.arc(x, y, 20, 0, Math.PI*2);
-			context.fillStyle = "green";
+			context.arc(x, y, 10, 0, Math.PI*2);
+			context.fillStyle = "white";
 			context.fill();
+			context.strokeStyle = "#23D500";
+			context.stroke();
 			context.closePath();
 		}
 		
