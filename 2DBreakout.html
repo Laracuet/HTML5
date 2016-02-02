@@ -28,6 +28,9 @@
 		var ballX = canvas.width/2;
     	var ballY = canvas.height/2;
 		
+		var ballDx = 2; 
+		var ballDy = -2; 
+		
 		context.beginPath();
 		context.rect(20, 40, 40, 120);
 		context.fillStyle = "#23D500";
@@ -45,6 +48,9 @@
 			context.strokeStyle = "#23D500";
 			context.stroke();
 			context.closePath();
+			
+			ballX += ballDx 
+			ballY += ballDy 
 			
 		}
 		
