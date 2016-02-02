@@ -31,6 +31,18 @@
 		var ballDx = -1; 
 		var ballDy = 1; 
 		
+		function drawBall() {
+			
+			context.beginPath();
+			context.arc(ballX, ballY, 9, 0, Math.PI*2);
+			context.fillStyle = "white";
+			context.fill();
+			context.strokeStyle = "black";
+			context.stroke();
+			context.closePath();
+			
+		}
+		
 		function draw() {
 			context.clearRect(0, 0, canvas.width, canvas.height);
 			
@@ -38,20 +50,14 @@
 			context.rect(20, 40, 40, 120);
 			context.fillStyle = "#23D500";
 			context.fill();
-			context.strokeStyle = "white";
+			context.strokeStyle = "black";
 			context.stroke();
 			context.closePath();
 			
-    		context.beginPath();
-			context.arc(ballX, ballY, 9, 0, Math.PI*2);
-			context.fillStyle = "white";
-			context.fill();
-			//context.strokeStyle = "#23D500";
-			//context.stroke();
-			context.closePath();
-			
-			ballX += ballDx 
-			ballY += ballDy 
+			drawBall(); 	
+		
+			ballX += ballDx;
+			ballY += ballDy; 
 			
 		}
 		
