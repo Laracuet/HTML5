@@ -34,8 +34,11 @@
 		context.closePath();
 		
 		function draw() {
+			var x = canvas.width/2;
+    		var y = canvas.height/2;
+			
     		context.beginPath();
-			context.arc(240, 160, 20, 0, Math.PI*2);
+			context.arc(x, y, 20, 0, Math.PI*2);
 			context.fillStyle = "green";
 			context.fill();
 			context.closePath();
